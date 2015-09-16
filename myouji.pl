@@ -1,66 +1,3 @@
-<?xml version="1.0"?>
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-2022-JP" />
-	<meta name="keywords" lang="ja" content="名字, perl, 分割, 姓名" />
-	<meta name="author" content="Hiroki ONO" />
-	<meta name="copyright" content="&copy; 2000 Hiroki Ono" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<link rel="stylesheet" href="onohiroki.css" type="text/css" />
-	<link rel="Contents" href="menu.html" />
-	<link rev="made" href="mailto:onohiroki@cup.com" />
-	<link rel="Start" href="./" />
-	<link rel="Index" href="menu.html" />
-	<link rel="Help" href="faq.html" />
-	<link rel="Bookmark" href="Link.html" />
-	<title xml:lang="ja" lang="ja">myouji.pl / 姓名 分割 perl スクリプト / おのひろきおんらいん</title>
-</head>
-<body>
-<div class="header"><p class="navi"><span class="logo"><a href="./">おのひろきおんらいん</a></span><a href="./" title="おのひろきおんらいんの最初のページ" name="top" id="top">welcome</a> |
-<a href="seek.html" title="おのひろきおんらいんとメーリングリストの内容を検索できます">検索</a> |
-<a href="menu.html" accesskey="0" title="もくじのページ">もくじ</a> |
-<a href="community.html" title="メーリングリスト(ML)と掲示板(BBS)の紹介">コミュニティ</a> |
-<a href="Bike.html" title="タイヤやパーツなどを含む，自転車全般">自転車</a> |
-<a href="Bike-foldingbike.html" title="BD-1 や Brompton といった折りたたみ自転車について">折りたたみ</a> |
-<a href="bent.html" title="Sat R Day などリカンベントについて">リカンベント</a> |
-<a href="tndm-menu.html" title="二人乗り用の自転車，タンデム自転車について">タンデム</a> |
-<a href="bike-touring-top.html" title="サイクリング，ツーリングそしてポタリング．つまり自転車で走った時の記録">サイクリング</a> |
-<a href="gps-menu.html" title="サイクリングにハンディ GPS!">GPS</a> |
-<a href="Link.html" title="リンクいろいろ">Link</a> |</p>
-<p class="navi"><a href="etc.html" title="web, モノ, コンピュータとか">その他</a> &gt; web とコンピュータについて</p></div>
-<!--
-<rdf:RDF
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:foaf="http://xmlns.com/foaf/0.1/">
-<rdf:Description rdf:about="http://onohiroki.cycling.jp/">
-   <foaf:maker rdf:parseType="Resource">
-     <foaf:holdsAccount>
-       <foaf:OnlineAccount foaf:accountName="onohiroki">
-         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
-       </foaf:OnlineAccount>
-     </foaf:holdsAccount>
-   </foaf:maker>
-</rdf:Description>
-</rdf:RDF>
--->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-50484-1";
-urchinTracker();
-</script>
-<h1>myouji.pl / 姓名 分割 perl スクリプト</h1>
-<p>名字と名前の間に「,」をいれようとする perl スクリプトです．</p>
-<p>このスクリプトの他に，名字のデータファイルが必要です．</p>
-<ul>
-<li>つっくんの部屋 名字博士<br /><a href="http://www.alles.or.jp/%7Etsuyama/name.htm">http://www.alles.or.jp/~tsuyama/name.htm</a></li>
-<li>データファイル <a href="http://www.alles.or.jp/~tsuyama/image/myouji.lzh">http://www.alles.or.jp/~tsuyama/image/myouji.lzh</a></li>
-</ul>
-<hr />
-<pre>
 #!/usr/local/bin/perl
 # myouji.pl
 # 2001 copyright (c) おのひろき onohiroki@cup.com
@@ -68,9 +5,9 @@ urchinTracker();
 #
 # データベースなどで，なまえの姓名が分離していないと嫌な感じですよね．
 # 名字と名前の間に「,」をいれようとする perl スクリプトです．
-# つっくんの部屋 名字博士 http://www.alles.or.jp/~tsuyama/name.htm から
+# つっくんの部屋 名字博士 http://www.alles.or.jp/‾tsuyama/name.htm から
 # ダウンロードできる名字のデータファイル
-# http://www.alles.or.jp/~tsuyama/image/myouji.lzh
+# http://www.alles.or.jp/‾tsuyama/image/myouji.lzh
 # をもちいて，名前と名字が連結したものを分離しようとします．
 # 1 文字の名字よりは 2 文字の名字．2 文字の名字よりは 3 文字以上の
 # 名字にマッチングしようとします．同じ漢字なら，よりメジャーなフリガナ
@@ -101,7 +38,7 @@ urchinTracker();
 # と出力されます．
 #
 # MacJPerl では，ドロップレットとして保存して，変換したいファイルを
-# ドラグ&amp;ドロップします．
+# ドラグ&ドロップします．
 #
 # UNIX や Windows の環境でもテストしました．data.txt という入力ファイルを
 # 用意したら
@@ -131,13 +68,13 @@ urchinTracker();
 
 # 日本語の処理に jcode.pl の機能を一部利用します．
 # 漢字コード変換と半角カナ・全角カナの変換を行わない場合は，
-# とくに必要ないのですが，その場合は &amp;jcode で始まる行を
+# とくに必要ないのですが，その場合は &jcode で始まる行を
 # コメントアウトするか削除してください．
 require 'jcode.pl';
  
 # 名字データファイル
-# つっくんの部屋 名字博士 http://www.alles.or.jp/~tsuyama/name.htm
-# http://www.alles.or.jp/~tsuyama/image/myouji.lzh
+# つっくんの部屋 名字博士 http://www.alles.or.jp/‾tsuyama/name.htm
+# http://www.alles.or.jp/‾tsuyama/image/myouji.lzh
 $nameDB = "名字.txt"; 
 
 # 半角カナを全角に変換する場合には名字データファイルの漢字コードを
@@ -151,38 +88,38 @@ $outfile = "outfile.txt";  #出力ファイル
 $kw = "";
 $name1 = "";$name2 = "";$name3 = "";
 $yomi0 = "";$yomi1 = "";$yomi2 = "";$yomi3 = "";
-open(OUTFILE,"&gt;&gt;$outfile");
+open(OUTFILE,">>$outfile");
 print "start...\n";
-while($name = &lt;&gt;){
- &amp;jcode'convert(*name, euc);
- $name =~ s/\n//g;
-	$name =~ s/\r//g;
-	open(DBFILE, "&lt; $nameDB");
+while($name = <>){
+ &jcode'convert(*name, euc);
+ $name =‾ s/\n//g;
+  $name =‾ s/\r//g;
+  open(DBFILE, "< $nameDB");
  $sw1 = 1;
-	while(($kw = &lt;DBFILE&gt; ) &amp;&amp; $sw1){
+  while(($kw = <DBFILE> ) && $sw1){
   if ($h2z eq "sjis"){
-   &amp;jcode'h2z_sjis(*kw);
+   &jcode'h2z_sjis(*kw);
   }elsif ($h2z eq "euc"){
-   &amp;jcode'h2z_euc(*kw);
+   &jcode'h2z_euc(*kw);
   }
-  &amp;jcode'convert(*kw, euc);
-		$kw =~ s/\n//g;
-		$kw =~ s/\r//g;
-		$kw =~ s/([^,]+),([^,]+).*/$1/;
+  &jcode'convert(*kw, euc);
+    $kw =‾ s/\n//g;
+    $kw =‾ s/\r//g;
+    $kw =‾ s/([^,]+),([^,]+).*/$1/;
   $yomi0 = $+; #print $kw;print $yomi0;print "\n";
-		if ($name =~ /^$kw(.*)/) { 
+    if ($name =‾ /^$kw(.*)/) { 
     if (length($kw) eq 2) { 
      $name1 = "$kw,$+";
-     if ($name1 eq "" &amp;&amp;$ name2 eq "" &amp;&amp; $name3 eq "") { 
-       &amp;jcode'convert(*kw, $kanji);;
-							print "[$kw?]";}
+     if ($name1 eq "" &&$ name2 eq "" && $name3 eq "") { 
+       &jcode'convert(*kw, $kanji);;
+              print "[$kw?]";}
      if ($yomi1 eq "") {$yomi1 = $yomi0;}
     }
     if (length($kw) eq 4) { 
      $name2 = "$kw,$+";
      if ($yomi2 eq "") {$yomi2 = $yomi0;}
     }
-    if (length($kw) &gt; 4) {
+    if (length($kw) > 4) {
      $name3 = "$kw,$+";
      if ($yomi3 eq "") {$yomi3 = $yomi0;}
      $sw1 = 0;
@@ -197,17 +134,11 @@ while($name = &lt;&gt;){
  
  $name1 = "";$name2 = "";$name3 = "";
  $yomi1 = "";$yomi2 = "";$yomi3 = "";
- &amp;jcode'convert(*name, $kanji);
+ &jcode'convert(*name, $kanji);
  print $name;
  print OUTFILE $name;
  # MacPerl や MacJPerl で　出力ファイルのファイルタイプを指定します．
- #&amp;MacPerl'SetFileInfo('JEDT', 'TEXT', $outfile);
+ #&MacPerl'SetFileInfo('JEDT', 'TEXT', $outfile);
 }
 close (OUTFILE);
 print "End of script.\n";
-</pre>
-<hr />
-<address>おのひろき <a name="address" href="mailto:onohiroki@cup.com?subject=onohiroki_online">onohiroki@cup.com</a></address>
-
-</body>
-</html>
