@@ -1,57 +1,3 @@
-<?xml version="1.0"?>
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-2022-JP" />
-	<meta name="keywords" lang="ja" content="名字, perl, 分割, 姓名" />
-	<meta name="author" content="Hiroki ONO" />
-	<meta name="copyright" content="&copy; 2000 Hiroki Ono" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<link rel="stylesheet" href="onohiroki.css" type="text/css" />
-	<link rel="Contents" href="menu.html" />
-	<link rev="made" href="mailto:onohiroki@cup.com" />
-	<link rel="Start" href="./" />
-	<link rel="Index" href="menu.html" />
-	<link rel="Help" href="faq.html" />
-	<link rel="Bookmark" href="Link.html" />
-	<title xml:lang="ja" lang="ja">myouji.pl / 姓名 分割 perl スクリプト / おのひろきおんらいん</title>
-</head>
-<body>
-<div class="header"><p class="navi"><span class="logo"><a href="./">おのひろきおんらいん</a></span><a href="./" title="おのひろきおんらいんの最初のページ" name="top" id="top">welcome</a> |
-<a href="seek.html" title="おのひろきおんらいんとメーリングリストの内容を検索できます">検索</a> |
-<a href="menu.html" accesskey="0" title="もくじのページ">もくじ</a> |
-<a href="community.html" title="メーリングリスト(ML)と掲示板(BBS)の紹介">コミュニティ</a> |
-<a href="Bike.html" title="タイヤやパーツなどを含む，自転車全般">自転車</a> |
-<a href="Bike-foldingbike.html" title="BD-1 や Brompton といった折りたたみ自転車について">折りたたみ</a> |
-<a href="bent.html" title="Sat R Day などリカンベントについて">リカンベント</a> |
-<a href="tndm-menu.html" title="二人乗り用の自転車，タンデム自転車について">タンデム</a> |
-<a href="bike-touring-top.html" title="サイクリング，ツーリングそしてポタリング．つまり自転車で走った時の記録">サイクリング</a> |
-<a href="gps-menu.html" title="サイクリングにハンディ GPS!">GPS</a> |
-<a href="Link.html" title="リンクいろいろ">Link</a> |</p>
-<p class="navi"><a href="etc.html" title="web, モノ, コンピュータとか">その他</a> &gt; web とコンピュータについて</p></div>
-<!--
-<rdf:RDF
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:foaf="http://xmlns.com/foaf/0.1/">
-<rdf:Description rdf:about="http://onohiroki.cycling.jp/">
-   <foaf:maker rdf:parseType="Resource">
-     <foaf:holdsAccount>
-       <foaf:OnlineAccount foaf:accountName="onohiroki">
-         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
-       </foaf:OnlineAccount>
-     </foaf:holdsAccount>
-   </foaf:maker>
-</rdf:Description>
-</rdf:RDF>
--->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-50484-1";
-urchinTracker();
-</script>
 <h1>myouji.pl / 姓名 分割 perl スクリプト</h1>
 <p>名字と名前の間に「,」をいれようとする perl スクリプトです．</p>
 <p>このスクリプトの他に，名字のデータファイルが必要です．</p>
@@ -208,6 +154,3 @@ print "End of script.\n";
 </pre>
 <hr />
 <address>おのひろき <a name="address" href="mailto:onohiroki@cup.com?subject=onohiroki_online">onohiroki@cup.com</a></address>
-
-</body>
-</html>
