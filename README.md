@@ -1,11 +1,16 @@
 # myouji.pl / 姓名 分割 perl スクリプト
+
+
 名字と名前の間に「,」をいれようとする perl スクリプトです．
 このスクリプトの他に，名字のデータファイルが必要です．
+
+## 他から入手が必要なファイル
 
 + [つっくんの部屋 名字博士 http://www.alles.or.jp/%7Etsuyama/name.htm](http://www.alles.or.jp/%7Etsuyama/name.htm)
 + [データファイル http://www.alles.or.jp/%7Etsuyama/image/myouji.lzh](http://www.alles.or.jp/%7Etsuyama/image/myouji.lzh)
 
----
+## 概要
+
 データベースなどで，なまえの姓名が分離していないと嫌な感じですよね．
 名字と名前の間に「,」をいれようとする perl スクリプトです．
 [つっくんの部屋 名字博士](http://www.alles.or.jp/%7Etsuyama/name.htm) からダウンロードできる[名字のデータファイル](http://www.alles.or.jp/%7Etsuyama/image/myouji.lzh)
@@ -41,5 +46,72 @@ UNIX や Windows の環境でもテストしました． data.txt という入�
 
 + 2001-01-31 公開
 + 2015-09-16 修正
+
+## ファイル
+
+| ファイル名                 | 説明　　　　                                       |
+|--------------------------|---------------------------------------------------|
+|[myouji.pl](myouji.pl)    | プログラム本体                                      |
+|[nameDB.txt](nameDB.txt)  | 名字のデータファイルのサンプル．シフトJISのファイルです．|
+|[data.txt](data.txt)      | 氏名が書かれたサンプルファイル．シフトJISのファイルです．|
+
+## 使い方
+
+### Windows の場合
+
+Winodws に ActivePerl をインストールします．これにならってインストールすれば良いでしょう．
+
+http://www.perlplus.jp/perlinstall/install/index1.html
+
+つぎに，ここで配布しているファイルを用意します．
+
++ [myouji.pl](myouji.pl)
++ [nameDB.txt](nameDB.txt)
++  [data.txt](data.txt)
+
+
+Windows でコマンドプロンプトを立ち上げて，CD コマンドを使って `myouji.pl` がある
+ディレクトリまで移動します．
+
+たとえば Documents の中に myouji というフォルダを作って，その中に三つのファイルを置いたとしたら，
+
+`CD C:\Users\You\Documents\myouji`
+
+としてから
+
+`DIR`
+
+で，先の三つのファイルのファイル名が見えれば OK です．
+
+`perl myouji.pl data.txt`
+
+とすると画面にいろいろ表示して `output.txt` というファイルも生成されます．
+この時に `data.txt` と `output.txt` を比較して，何が起こったのか推測してください．
+なお，`nameDB.txt` は苗字のデータベースですが，これはデータ数がとても少ないので，
+
+[つっくんの部屋 名字博士 http://www.alles.or.jp/%7Etsuyama/name.htm](http://www.alles.or.jp/%7Etsuyama/name.htm)
+
+からリンクのある
+
+[データファイル http://www.alles.or.jp/%7Etsuyama/image/myouji.lzh](http://www.alles.or.jp/%7Etsuyama/image/myouji.lzh)
+
+をダウンロードしてください．
+
+`Myouji.lzh` を解凍すると `名字.txt` というファイルになるので，
+`nameDB.txt` を削除してから `名字.txt` を `nameDB.txt` にリネームして使ってくださ
+い．
+
+
+あとは，実際に処理したい名前をテキストファイルにして用意します．たとえば `name.txt`
+というファイルを用意したら，
+
+`perl myouji.pl name.txt`
+
+とすれば `output.txt` ができます．
+
+## Mac の場合
+
+最初から Perl はインストールされているので簡単だと思います．
+
 ---
 <address>おのひろき <a name="address" href="mailto:onohiroki@cup.com?subject=onohiroki_online">onohiroki@cup.com</a></address>
